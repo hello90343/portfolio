@@ -1,0 +1,35 @@
+//@use './product_list_style/index'
+
+#bodyHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+
+    #leftHeader{
+
+        #leftHeaderE{
+            color: red;
+        }
+
+        #leftHeaderO{
+            color: blue;
+        }
+    }
+
+    #rightHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    #navLeftHeader{
+        display: flex;
+        gap: 40px;
+    }
+
+    #navRightHeader {
+        display: flex;
+        gap: 10px;
+    }
+}
+}

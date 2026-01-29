@@ -1,4 +1,7 @@
 $background-blue: #141D2F;
+$black: black;
+$lightGreen: #70E61C;
+$lightPurple: #9747FF;
 
 
 *{
@@ -9,4 +12,10 @@ $background-blue: #141D2F;
 
 body{
     background-color: $background-blue;
+
+}
+
+a {
+    text-decoration: none;
+    color: $black;
 }
