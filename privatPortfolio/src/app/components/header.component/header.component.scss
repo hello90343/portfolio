@@ -54,7 +54,7 @@
             font-family: 'inter';
             font-size: 15px;
             &:hover{
-                color: map-get(colors.$colors, light-purple);
+                color: map-get(colors.$colors, light-green);
             }
         }
     }
@@ -73,11 +73,12 @@
     color: map-get(colors.$colors, white);
     transition: background-color 0.2s ease;
 
-    &.active {
+    &.active { // [class.active] true false
       background-color: map-get(colors.$colors, light-green);
     }
     &:not(.active):hover {
       background-color: map-get(colors.$colors, light-purple);
+      border: 1px solid map-get(colors.$colors, light-purple);
     }
   }
 }

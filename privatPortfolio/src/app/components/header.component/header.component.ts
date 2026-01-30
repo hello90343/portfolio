@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  currentLang: 'DE' | 'EN' = 'DE';
+currentLang: 'DE' | 'EN' = 'DE';
 
-  translatorSwitch(lang: 'DE' | 'EN') {
-    this.currentLang = lang;
-  }
+translatorSwitch(lang: 'DE' | 'EN') {
+  this.currentLang = lang;
+ }
 }
-

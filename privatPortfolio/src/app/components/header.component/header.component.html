@@ -9,10 +9,14 @@
         <a href="">Portfolio</a>
     </nav>
 <nav id="navRightHeader">
+  <!-- Wenn currentLang DE ist, dann active hinzufügen -->
+  <!-- [class.active] wartet bis currentLang DE ist -->
+  <!-- [class.active] ist nicht gleich class -->
   <button
-    id="navRightHeaderDE"
-    [class.active]="currentLang === 'DE'"
-    (click)="translatorSwitch('DE')">
+  id="navRightHeaderDE"
+  [class.active]="currentLang === 'DE'"
+  (click)="translatorSwitch('DE')"
+  >
     DE
   </button>
 
