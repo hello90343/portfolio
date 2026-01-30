@@ -1,4 +1,5 @@
-//@use './product_list_style/index'
+@use '../../../styles/abstract/colors' as colors;
+@use '../../../styles/base/fonts' as fonts;
 
 #bodyHeader{
     display: flex;
@@ -7,12 +8,34 @@
 
     #leftHeader{
 
+        h1{
+            color: map-get(colors.$colors, white);
+            font-family: 'inter';
+            font-weight: 700;
+            cursor:cell;
+        }
+
         #leftHeaderE{
-            color: red;
+            font-weight: bold;
+             background: linear-gradient(
+              to top,
+              map-get(colors.$colors, white) 50%,
+              map-get(colors.$colors, light-purple) 50%
+            );
+            background-clip: text;
+            color: transparent;
         }
 
         #leftHeaderO{
-            color: blue;
+            color: map-get(colors.$colors, light-purple);
+            font-weight: bold;
+             background: linear-gradient(
+              to right,
+              map-get(colors.$colors, white) 50%,
+              map-get(colors.$colors, light-green) 50%
+            );
+            background-clip: text;
+            color: transparent;
         }
     }
 
@@ -25,11 +48,38 @@
     #navLeftHeader{
         display: flex;
         gap: 40px;
+
+        a{
+            color: map-get(colors.$colors, white);
+            font-family: 'inter';
+            font-size: 15px;
+            &:hover{
+                color: map-get(colors.$colors, light-purple);
+            }
+        }
     }
 
-    #navRightHeader {
-        display: flex;
-        gap: 10px;
+#navRightHeader {
+  display: flex;
+  gap: 10px;
+
+  button {
+    padding: 3px 5px;
+    border-radius: 7px;
+    border: 1px solid map-get(colors.$colors, light-green);
+    font-family: 'inter';
+    cursor: pointer;
+    background-color: transparent;
+    color: map-get(colors.$colors, white);
+    transition: background-color 0.2s ease;
+
+    &.active {
+      background-color: map-get(colors.$colors, light-green);
     }
+    &:not(.active):hover {
+      background-color: map-get(colors.$colors, light-purple);
+    }
+  }
+}
 }
 }
