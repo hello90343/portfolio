@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header.component/header.component';
 import { HeroComponent } from './components/hero.component/hero.component';
+import { SocialLinksSectionComponent } from './components/social-links-section.component/social-links-section.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, SocialLinksSectionComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
