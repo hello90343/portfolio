@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: pink 2px solid;
 
 app-header{
   width: 100%;
@@ -12,5 +13,10 @@ app-header{
 app-hero{
     width: 100%;
     max-width: 1440px;
+}
+
+app-social-links-section{
+  width: 100%;
+  max-width: 1440px;
 }
 }
