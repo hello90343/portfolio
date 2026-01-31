@@ -1,5 +1,95 @@
-img{
+@use '../../../styles/abstract/colors' as colors;
+
+#mainHero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 80px;
+
+    #mainHeroLeft{
+    min-width: 450px;
+    height: 400px;
+    background-image: url(/images/desgins/purple_green.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
     width: 200px;
-    height: 200px;
-    border-radius: 20px;
+    height: auto;
+    border-radius: 10px;
+    border: map-get(colors.$colors, background-blue) 2px solid;
 }
+  }
+
+  #mainHeroRight{
+    display: flex;
+    color: map-get(colors.$colors, white);
+    width: 100%;
+    justify-content: end;
+    height: auto;
+
+  #mainHeroRightLeft{
+    padding: 0px;
+    height: 130px;
+    width: 100px;
+    margin-right: 10px;
+    font-family: 'inter';
+    color: map-get(colors.$colors, white);
+    font-size: 40px;
+    font-weight: 700;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+
+  }
+
+    #mainHeroRightRight{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+
+      button{
+        width: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: map-get(colors.$colors, light-green);
+        color: map-get(colors.$colors, white);
+        border: none;
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+        &:hover{
+          background-color: map-get(colors.$colors, light-purple);
+          transform: scale(1.2);
+        }
+      }
+
+    #mainHeroRightRightTop{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      #mainHeroRightRightTopName{
+        font-family: 'inter';
+        color: map-get(colors.$colors, white);
+        font-size: 60px;
+        font-weight: 700;
+        min-width: 500px;
+      }
+
+      #mainHeroRightRightTopPosition{
+        font-family: 'inter';
+        color: map-get(colors.$colors, light-green);
+        font-size: 40px;
+        font-weight: 300;
+      }
+   }
+  }
+ }
+}
+
+
