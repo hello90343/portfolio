@@ -3,7 +3,6 @@
 #mainSocialLinks{
     background-image: url(/images/desgins/heroBackground.png);
     width: 100%;
-    border: red 2px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,10 +10,10 @@
 
     #mainSocialLinksLeft{
         display: flex;
-        border: greenyellow 2px solid;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        height: 60px;
 
         #mainSocialLinksLeftLine{
             background-color: map-get(colors.$colors, light-purple);
@@ -23,13 +22,65 @@
             border-radius: 0px 20px 20px 0px;
         }
 
-        #mainSocialLinksLeftNavUl{
-            display: flex;
-            gap: 20px;
+        #mainSocialLinksLeftNav{
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
         }
 
-        #mainSocialLinksLeftNavUl > li > a{
-            color: white;
-        }
+            #mainSocialLinksLeftNav > a:not(:last-child){
+                width: 50px;
+                height: 50px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+            }
+
+            #mainSocialLinksLeftNav > a{
+                width: 100%;
+                height: 100%;
+            }
+
+            #mainSocialLinksLeftNavGitHub{
+                    background-image: url(/images/icons/GitHubIcon.png);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+            #mainSocialLinksLeftNavMail{
+                    background-image: url(/images/icons/EMailIcon.png);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+            #mainSocialLinksLeftNavMail{
+                    background-image: url(/images/icons/EMailIcon.png);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+            #mainSocialLinksLeftNavIndeed{
+                    background-image: url(/images/icons/indeedIcon.png);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+            #mainSocialLinksLeftNavMailInfo{
+                color: map-get(colors.$colors, white);
+            }            
     }
+}
+
+#mainSocialLinksRight{
+    color: map-get(colors.$colors, white);
+    transform: rotate(360deg);
+    display: flex;
+    gap: 10px;
+    transform: rotate(90deg);
 }
