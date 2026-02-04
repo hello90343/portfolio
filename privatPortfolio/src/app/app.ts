@@ -4,10 +4,11 @@ import { HeaderComponent } from './components/header.component/header.component'
 import { HeroComponent } from './components/hero.component/hero.component';
 import { SocialLinksSectionComponent } from './components/social-links-section.component/social-links-section.component';
 import { AboutSectionComponent } from './components/about-section.component/about-section.component';
+import { SkillsSectionComponent } from './components/skills-section.component/skills-section.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, SocialLinksSectionComponent, AboutSectionComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, SocialLinksSectionComponent, AboutSectionComponent, SkillsSectionComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

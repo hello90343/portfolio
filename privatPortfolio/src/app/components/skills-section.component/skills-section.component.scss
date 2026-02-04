@@ -1,0 +1,237 @@
+@use '../../../styles/abstract/colors' as colors;
+
+#skillsMain{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+
+#skillsMainLeft{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 30px 40px; 
+}
+
+    #skillsMainLeft > div{
+        width: 140px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        footer{
+            text-align: center;
+        }
+
+        #skillsMainLeftHTMLImg{
+            background-image: url(/images/icons/html.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftCSSImg{
+            background-image: url(/images/icons/css.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftJSImg{
+            background-image: url(/images/icons/javaScript.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftTSImg{
+            background-image: url(/images/icons/typeScript.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftAngularImg{
+            background-image: url(/images/icons/angular.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftGitImg{
+            background-image: url(/images/icons/git.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftAPIImg{
+            background-image: url(/images/icons/api.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftScrumImg{
+            background-image: url(/images/icons/scrum.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftMDImg{
+            background-image: url(/images/icons/materialDesign.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 140px;
+            height: 90px;
+            transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #skillsMainLeftCLImg{
+            background-image: url(/images/icons/learningPurple.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100px;
+            height: 90px;
+        }
+
+        #skillsMainLeftCLFooter{
+            color: map-get(colors.$colors, light-purple);
+        }
+    }
+
+    #skillsMainLeft > div > footer{
+        color: map-get(colors.$colors, white);
+    }
+
+    #skillsMainRight{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+
+        #skillsMainRightBox{
+            justify-content: center;
+            align-items: start;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            #skillsMainRightBoxBtn{
+                width: 85%;
+            }
+        }
+
+        div > div{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h2{
+            color: map-get(colors.$colors, white);
+            font-family: 'inter';
+            font-size: 120px;
+            font-weight: 700;
+        }
+
+        div > div > div{
+            background-color: map-get(colors.$colors, light-purple);
+            width: 60px;
+            height: 5px;
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        p{
+            color: map-get(colors.$colors, white);
+            font-family: inter;
+            font-weight: 200;
+            width: 475px;
+        }
+
+        h5{
+            color: map-get(colors.$colors, white);
+            font-size: 20px;
+            font-weight:bolder;
+            font-family: inter;
+
+            span{
+                color: map-get(colors.$colors, light-purple);
+            }
+        }
+
+
+        button{
+           width: 150px;
+           padding: 10px;
+           border-radius: 5px;
+           background-color: map-get(colors.$colors, light-green);
+           color: map-get(colors.$colors, white);
+           border: none;
+           transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+
+            &:hover{
+                background-color: map-get(colors.$colors, light-purple);
+                transform: scale(1.2);
+        }
+            }
+    }
+}
