@@ -1,0 +1,207 @@
+@use '../../../styles/abstract/colors' as colors;
+
+#projectsMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    flex-direction: column;
+    gap: 40px;
+
+    #projectsMainTop{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
+        h2{
+            color: map-get(colors.$colors, white);
+            font-family: 'inter';
+            font-size: 120px;
+            font-weight: 700;
+        }
+
+        #projectsMainTopLineLeft{
+            background-color: map-get(colors.$colors, light-purple);
+            height: 5px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        #projectsMainTopLineRight{
+            background-color: map-get(colors.$colors, light-purple);
+            height: 5px;
+            width: 550px;
+            border-radius: 20px;
+        }
+    }
+
+    #projectsMainInfo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        p{
+            color: map-get(colors.$colors, white);
+            font-family: inter;
+        }
+    }
+
+    #projectsMainProjects{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        #projectsMainProjectsJoin{
+            width: 80%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            #projectsMainProjectsJoinLeft{
+                width: 50%;
+                height: 100%;
+                background-image: url(/join_logo.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #projectsMainProjectsJoinRight{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 50px;
+                h3{
+                    color: map-get(colors.$colors, light-purple);
+                    font-size: 30px;
+                    font-family: inter;
+                }
+                p{
+                    color: map-get(colors.$colors, light-green);
+                    font-size: 20px;
+                }
+                #projectsMainProjectsJoinRightText{
+                    color: map-get(colors.$colors, white);
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+
+                > div{
+                    display: flex;
+                    gap: 50px;
+                }
+
+                #projectsMainProjectsJoinRightBtnLiveTest{
+                    width: 90px;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: none;
+                    font-family: inter;
+                    background-color: map-get(colors.$colors, light-purple);
+                    &:hover{
+                        background-color: map-get(colors.$colors, light-green);
+                    }
+                    a{
+                       color: map-get(colors.$colors, white);
+                       font-weight: 300;
+                    }
+                }
+
+                #projectsMainProjectsJoinRightBtnGithub{
+                    width: 90px;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: map-get(colors.$colors, light-green) 2px solid;
+                    font-family: inter;
+                    background-color: transparent;
+                                        &:hover{
+                        background-color: map-get(colors.$colors, light-green);
+                    }&:hover{
+                        background-color: map-get(colors.$colors, light-green);
+                    }
+                    a{
+                       color: map-get(colors.$colors, white);
+                       font-weight: 300;
+                    }
+                }
+            }
+        }
+        #projectsMainProjectsPoloLoco{
+            width: 80%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            #projectsMainProjectsPoloLocoRight{
+                width: 50%;
+                height: 100%;
+                background-image: url(/polo_loco_logo.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #projectsMainProjectsPoloLocoLeft{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 50px;
+                h3{
+                    color: map-get(colors.$colors, light-purple);
+                    font-size: 30px;
+                    font-family: inter;
+                }
+                p{
+                    color: map-get(colors.$colors, light-green);
+                    font-size: 20px;
+                }
+                #projectsMainProjectsPoloLocoRightText{
+                    color: map-get(colors.$colors, white);
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+
+                > div{
+                    display: flex;
+                    gap: 50px;
+                }
+
+                #projectsMainProjectsPoloLocoRightBtnLiveTest{
+                    width: 90px;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: none;
+                    font-family: inter;
+                    background-color: map-get(colors.$colors, light-purple);
+                    &:hover{
+                        background-color: map-get(colors.$colors, light-green);
+                    }
+                    a{
+                       color: map-get(colors.$colors, white);
+                       font-weight: 300;
+                    }
+                }
+
+                #projectsMainProjectsPoloLocoRightBtnGithub{
+                    width: 90px;
+                    height: 35px;
+                    border-radius: 5px;
+                    border: map-get(colors.$colors, light-green) 2px solid;
+                    font-family: inter;
+                    background-color: transparent;
+                                        &:hover{
+                        background-color: map-get(colors.$colors, light-green);
+                    }&:hover{
+                        background-color: map-get(colors.$colors, light-green);
+                    }
+                    a{
+                       color: map-get(colors.$colors, white);
+                       font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
