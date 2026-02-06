@@ -1,15 +1,42 @@
-<section id="mainExperiences">
-    <div id="mainExperiencesContent">
-    <div id="mainExperiencesContentLeft">
-        <div id="mainExperiencesContentBox"></div>
+<section class="experience-section">
+  <div class="content">
+
+    <div class="quote-box">
+      <div class="quotes">❝</div>
+
+      <p>
+        {{ experiences[currentIndex].text }}
+      </p>
+
+      <div class="author">
+        <span class="line"></span>
+        <span>
+          {{ experiences[currentIndex].author }}
+          - {{ experiences[currentIndex].role }}
+        </span>
+      </div>
     </div>
-    <div id="mainExperiencesContentRight"></div>
+
+    <div class="person">
+      <img
+        [src]="experiences[currentIndex].image"
+        alt="Person"
+      />
     </div>
-    <div id="mainExperiencesContentSelection">
-        <div id="mainExperiencesContentSelectionBack">&#8592;</div>
-        <div class="mainExperiencesContentSelectionPoint"></div>
-        <div class="mainExperiencesContentSelectionPoint"></div>
-        <div class="mainExperiencesContentSelectionPoint"></div>
-        <div id="mainExperiencesContentSelectionNext">&#8594;</div>
+
+  </div>
+
+  <div class="navigation">
+    <span class="arrow" (click)="prev()">←</span>
+
+    <div class="dots">
+      <span
+        *ngFor="let e of experiences; let i = index"
+        [class.active]="i === currentIndex"
+        (click)="goTo(i)"
+      ></span>
     </div>
+
+    <span class="arrow" (click)="next()">→</span>
+  </div>
 </section>
