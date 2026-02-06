@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './experiences.component.scss',
 })
 export class ExperiencesComponent {
-
 }

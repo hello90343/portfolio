@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: pink 2px solid;
 
 app-header{
   width: 100%;
@@ -38,5 +37,14 @@ app-projects{
 app-experiences{
   width: 100%;
   max-width: 1440px;
+}
+
+app-formular{
+  width: 100%;
+  max-width: 1440px;
+}
+
+app-footer{
+  width: 100%;
 }
 }

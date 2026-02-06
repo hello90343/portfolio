@@ -7,10 +7,12 @@ import { AboutSectionComponent } from './components/about-section.component/abou
 import { SkillsSectionComponent } from './components/skills-section.component/skills-section.component';
 import { ProjectsComponent } from './components/projects.component/projects.component';
 import { ExperiencesComponent } from './components/experiences.component/experiences.component';
+import { FormularComponent } from './components/formular.component/formular.component';
+import { FooterComponent } from './components/footer.component/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, SocialLinksSectionComponent, AboutSectionComponent, SkillsSectionComponent, ProjectsComponent, ExperiencesComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, SocialLinksSectionComponent, AboutSectionComponent, SkillsSectionComponent, ProjectsComponent, ExperiencesComponent, FormularComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
