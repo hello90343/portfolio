@@ -1,0 +1,9 @@
+{
+    "greeting": {
+        "hi" : "Hallöchen",
+        "was geht" : "Was geht?"
+    },
+    "status": {
+        "language": "Deutsch"
+    }
+}
