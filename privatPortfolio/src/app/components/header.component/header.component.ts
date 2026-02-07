@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
+  imports:[TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -12,4 +13,9 @@ currentLang: 'DE' | 'EN' = 'DE';
 translatorSwitch(lang: 'DE' | 'EN') {
   this.currentLang = lang;
  }
+   private translate = inject(TranslateService);
+
+  useLanguage(language: string):void {
+    this.translate.use(language);
+  }
 }

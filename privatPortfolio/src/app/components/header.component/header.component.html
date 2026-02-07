@@ -4,9 +4,9 @@
     </div>
     <div id="rightHeader">
     <nav id="navLeftHeader">
-        <a href="">About me</a>
-        <a href="">Skills</a>
-        <a href="">Portfolio</a>
+        <a href="">{{'greeting.hi' | translate}}</a>
+        <a href="">{{'greeting.hi' | translate}}</a>
+        <a href="">{{'greeting.hi' | translate}}</a>
     </nav>
 <nav id="navRightHeader">
   <!-- Wenn currentLang DE ist, dann active hinzufügen -->
@@ -16,6 +16,7 @@
   id="navRightHeaderDE"
   [class.active]="currentLang === 'DE'"
   (click)="translatorSwitch('DE')"
+  (click)="useLanguage('de')"
   >
     DE
   </button>
@@ -23,7 +24,8 @@
   <button
     id="navRightHeaderEN"
     [class.active]="currentLang === 'EN'"
-    (click)="translatorSwitch('EN')">
+    (click)="translatorSwitch('EN')"
+    (click)="useLanguage('en')">
     EN
   </button>
 </nav>
