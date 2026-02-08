@@ -41,5 +41,22 @@
         "TextTwo" : "Encourage people to contact you and describe which role you are interested in. Show that your work can add value to their projects.",
         "TextThree" : "Do you need a frontend developer?",
         "TextFour" : "Contact me!"
-    }
+    },
+"experiences": [
+  {
+    "text": "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+    "author": "V. Schuster",
+    "role": "Team Partner"
+  },
+  {
+    "text": "The collaboration was smooth and very efficient. Great communication and results.",
+    "author": "Anna Weber",
+    "role": "Project Lead"
+  },
+  {
+    "text": "Professional workflow and excellent teamwork throughout the project.",
+    "author": "Daniel Koch",
+    "role": "Developer"
+  }
+]
 }

@@ -41,5 +41,22 @@
         "TextTwo" : "Ermutige Leute, dich zu kontaktieren und zu beschreiben, für welche Rolle du dich interessierst. Zeige, dass du mit deiner Arbeit einen Mehrwert für ihre Projekte schaffen kannst.",
         "TextThree" : "Brauchst du ein Frontend-Entwickler?",
         "TextFour" : "Kontaktiere mich!"
-    }
+    },
+"experiences": [
+  {
+    "text": "Michael hielt das Team mit seiner großartigen Organisation und klaren Kommunikation zusammen. Ohne seinen Einsatz wären wir nicht so weit gekommen.",
+    "author": "V. Schuster",
+    "role": "Teampartner"
+  },
+  {
+    "text": "Die Zusammenarbeit war reibungslos und sehr effizient.",
+    "author": "Anna Weber",
+    "role": "Projektleitung"
+  },
+  {
+    "text": "Professioneller Ablauf und hervorragende Teamarbeit im gesamten Projekt.",
+    "author": "Daniel Koch",
+    "role": "Entwickler"
+  }
+]
 }

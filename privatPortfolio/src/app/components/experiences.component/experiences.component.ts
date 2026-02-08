@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Experience {
   text: string;
@@ -10,36 +11,42 @@ interface Experience {
 
 @Component({
   selector: 'app-experiences',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss',
 })
-export class ExperiencesComponent {
+export class ExperiencesComponent implements OnInit {
+
+  private translate = inject(TranslateService);
+
   currentIndex = 0;
 
+  // Bilder bleiben im Code
   experiences: Experience[] = [
-    {
-      text:
-        "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
-      author: 'V. Schuster',
-      role: 'Team Partner',
-      image: 'assets/person.jpg',
-    },
-    {
-      text:
-        "The collaboration was smooth and very efficient. Great communication and results.",
-      author: 'Anna Weber',
-      role: 'Project Lead',
-      image: 'assets/person2.jpg',
-    },
-    {
-      text:
-        "Professional workflow and excellent teamwork throughout the project.",
-      author: 'Daniel Koch',
-      role: 'Developer',
-      image: 'assets/person3.jpg',
-    },
+    { text: '', author: '', role: '', image: 'assets/person.jpg' },
+    { text: '', author: '', role: '', image: 'assets/person2.jpg' },
+    { text: '', author: '', role: '', image: 'assets/person3.jpg' },
   ];
+
+  ngOnInit() {
+    this.loadTranslations();
+
+    // bei Sprachwechsel neu laden
+    this.translate.onLangChange.subscribe(() => {
+      this.loadTranslations();
+    });
+  }
+
+  loadTranslations() {
+    this.translate.get('experiences').subscribe((data: any[]) => {
+      data.forEach((exp, i) => {
+        this.experiences[i].text = exp.text;
+        this.experiences[i].author = exp.author;
+        this.experiences[i].role = exp.role;
+      });
+    });
+  }
 
   next() {
     this.currentIndex =
