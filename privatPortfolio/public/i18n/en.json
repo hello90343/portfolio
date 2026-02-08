@@ -1,9 +1,45 @@
 {
-    "greeting": {
-        "hi" : "Hello there",
-        "was geht" : "Whats up?"
+    "header": {
+        "Über mich" : "About me",
+        "Fähigkeiten" : "Skills",
+        "Portfolio" : "Portfolio"
     },
-    "status": {
-        "language": "English"
+    "hero": {
+        "Ich bin" : "I am",
+        "Lass uns reden" : "Let's talk"
+    },
+    "sls": {
+        "Nach unten scrollen" : "Scroll down"
+    },
+    "about": {
+        "Über mich" : "About me",
+        "TextOne" : "I am interested in IT and programming because I enjoy solving problems and developing digital solutions that can help in everyday life. My motivation is to continuously improve my skills and keep up with new technologies.",
+        "TextTwo" : "I currently live in my present region and am open to various working models, including remote work. If suitable opportunities arise, I can also consider relocating.",
+        "TextThree" : "I am open to learning new technologies and methods and regularly work on expanding my knowledge and gaining practical experience.",
+        "TextFour" : "When facing challenges, I try to approach problems calmly and in a structured way, working step by step to find a solution. Analytical thinking, perseverance, and collaboration with others help me develop good and efficient solutions."
+    },
+    "skills": {
+        "Titel" : "Skills",
+        "TextOne" : "I have worked with various frontend technologies in different projects and gained practical experience.",
+        "TextTwo" : "Looking for",
+        "TextThree" : "additional skills",
+        "Fragezeichen" : "?",
+        "TextFour" : "Looking for another skill?",
+        "TextFive" : "I continuously learn new technologies and frameworks to expand my knowledge.",
+        "TextSix" : "Get in touch",
+        "TextSeven" : "Continually learning"
+    },
+    "projects": {
+        "Titel" : "Portfolio",
+        "TextOne" : "Discover a selection of my work here — interact with the projects to experience my skills in action.",
+        "TextTwo" : "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop, and assign users and categories.",
+        "TextThree" : "A simple side-scrolling platform game developed using an object-oriented approach. Help El Polo Loco collect coins and poison bottles to fight against enemies."
+    },
+    "formular": {
+        "Titel" : "Contact",
+        "TextOne" : "Do you have a problem to solve?",
+        "TextTwo" : "Encourage people to contact you and describe which role you are interested in. Show that your work can add value to their projects.",
+        "TextThree" : "Do you need a frontend developer?",
+        "TextFour" : "Contact me!"
     }
 }

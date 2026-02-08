@@ -8,12 +8,12 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-currentLang: 'DE' | 'EN' = 'DE';
+currentLang: 'DE' | 'EN' = 'EN';
 
 translatorSwitch(lang: 'DE' | 'EN') {
   this.currentLang = lang;
  }
-   private translate = inject(TranslateService);
+  private translate = inject(TranslateService);
 
   useLanguage(language: string):void {
     this.translate.use(language);

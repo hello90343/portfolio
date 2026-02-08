@@ -1,9 +1,45 @@
 {
-    "greeting": {
-        "hi" : "Hallöchen",
-        "was geht" : "Was geht?"
+    "header": {
+        "Über mich" : "Über mich",
+        "Fähigkeiten" : "Fähigkeiten",
+        "Portfolio" : "Portfolio"
     },
-    "status": {
-        "language": "Deutsch"
+        "hero": {
+        "Ich bin" : "Ich bin",
+        "Lass uns reden" : "Lass uns reden"
+    },
+        "sls": {
+        "Nach unten scrollen" : "Nach unten scrollen"
+    },
+     "about": {
+        "Über mich" : "Über mich",
+        "TextOne" : "Ich interessiere mich für IT und Programmierung, weil ich gerne Probleme löse und digitale Lösungen entwickle, die im Alltag helfen können. Meine Motivation ist es, meine Fähigkeiten kontinuierlich zu verbessern und mit neuen Technologien Schritt zu halten.",
+        "TextTwo" : "Ich lebe derzeit in meiner aktuellen Region und bin offen für verschiedene Arbeitsmodelle, einschließlich Remote-Arbeit. Bei passenden Möglichkeiten kann ich mir auch einen Umzug vorstellen.",
+        "TextThree" : "Ich bin offen dafür, neue Technologien und Methoden kennenzulernen und arbeite regelmäßig daran, meine Kenntnisse zu erweitern und praktische Erfahrungen zu sammeln.",
+        "TextFour" : "Bei Herausforderungen versuche ich, ruhig und strukturiert an Probleme heranzugehen und Schritt für Schritt eine Lösung zu finden. Dabei helfen mir analytisches Denken, Ausdauer und die Zusammenarbeit mit anderen, um gute und effiziente Lösungen zu entwickeln."
+    },
+        "skills": {
+        "Titel" : "Fähigkeiten",
+        "TextOne" : "Ich habe in verschiedenen Projekten mit unterschiedlichen Frontend-Technologien gearbeitet und praktische Erfahrung gesammelt.",
+        "TextTwo" : "Auf der Suche nach einer",
+        "TextThree" : "weiteren Fähigkeiten",
+        "Fragezeichen" : "?",
+        "TextFour" : "Auf der Suche nach einer weiteren Fähigkeit?",
+        "TextFive" : "Ich lerne kontinuierlich neue Technologien und Frameworks, um meine Kenntnisse zu erweitern.",
+        "TextSix" : "Kontakt aufnehmen",
+        "TextSeven" : "Fortlaufend lernen"
+    },
+        "projects": {
+        "Titel" : "Portfolio",
+        "TextOne" : "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+        "TextTwo" : "Task-Manager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, und weise Nutzer sowie Kategorien zu.",
+        "TextThree" : "Ein einfaches Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf El Polo Loco, Münzen und Giftflaschen zu finden, um gegen die Gegnern zu kämpfen."
+    },
+        "formular": {
+        "Titel" : "Kontakt",
+        "TextOne" : "Hast du ein Problem zu lösen?",
+        "TextTwo" : "Ermutige Leute, dich zu kontaktieren und zu beschreiben, für welche Rolle du dich interessierst. Zeige, dass du mit deiner Arbeit einen Mehrwert für ihre Projekte schaffen kannst.",
+        "TextThree" : "Brauchst du ein Frontend-Entwickler?",
+        "TextFour" : "Kontaktiere mich!"
     }
 }

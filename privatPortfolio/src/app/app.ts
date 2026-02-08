@@ -1,4 +1,4 @@
-import { Component, signal, inject } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header.component/header.component';
 import { HeroComponent } from './components/hero.component/hero.component';
@@ -9,7 +9,7 @@ import { ProjectsComponent } from './components/projects.component/projects.comp
 import { ExperiencesComponent } from './components/experiences.component/experiences.component';
 import { FormularComponent } from './components/formular.component/formular.component';
 import { FooterComponent } from './components/footer.component/footer.component';
-import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -18,11 +18,5 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'ngx';
-
-  private translate = inject(TranslateService);
-
-  useLanguage(language: string):void {
-    this.translate.use(language);
-  }
+  protected readonly title = signal('privatPortfolio');
 }
