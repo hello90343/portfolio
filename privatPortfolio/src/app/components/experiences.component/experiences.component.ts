@@ -11,13 +11,14 @@ interface Experience {
 
 @Component({
   selector: 'app-experiences',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss',
 })
 export class ExperiencesComponent implements OnInit {
 
+  // Einen Service (Objekt) von Angular in deine Component holen.
+  // translate ist inject
   private translate = inject(TranslateService);
 
   currentIndex = 0;
